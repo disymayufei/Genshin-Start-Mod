@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "genshin_start",
+  "version": "${version}",
+  "name": "Genshin Start",
+  "description": "Start your genshin in minecraft",
+  "authors": [
+    "Disy920"
+  ],
+  "contact": {
+    "repo": "https://github.com/Disy/Genshin_Start"
+  },
+  "license": "AGPL v3",
+  "icon": "assets/genshin_start/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "cn.disy920.genshin_start.client.GenshinStartClient"
+    ],
+    "main": [
+      "cn.disy920.genshin_start.GenshinStart"
+    ]
+  },
+  "mixins": [
+    "genshin_start.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.0",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

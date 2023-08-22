@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.disy920.genshin_start.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinChat"
+  ],
+  "client": [
+    "MixinMinecraftClient"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
